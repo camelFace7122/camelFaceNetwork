@@ -1,0 +1,13 @@
+.item {
+    color: green;
+    margin: 5px;
+    padding: 5px;
+    background-color: lightblue;
+}
+
+.item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}

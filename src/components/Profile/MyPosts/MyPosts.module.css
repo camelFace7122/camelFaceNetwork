@@ -1,0 +1,13 @@
+.posts__textarea {
+    margin-top: 10px;
+    min-width: 500px;
+    min-height: 100px;
+}
+
+.posts {
+    display: block;
+    background-color: darkgray;
+    padding: 15px;
+}
+
+

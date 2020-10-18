@@ -1,0 +1,23 @@
+.App {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas: "header header"
+                        "nav cont";
+  grid-gap: 10px;
+
+}
+
+.app-wrapper-content {
+  grid-area: cont;
+  background-color: gold;
+  display: flex;
+}
+
+
+
+
+

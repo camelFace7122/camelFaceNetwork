@@ -1,0 +1,65 @@
+.portrait img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid indianred;
+}
+.portrait button {
+    background-color: green;
+    border: 2px solid black;
+    padding: 5px;
+}
+h2 {
+    margin: 10px 10px 20px 10px;
+    font-size: 30px;
+}
+
+.portrait {
+    margin-right: 15px;
+}
+
+.usersContainer > img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 15px auto 0;
+}
+
+.userBlock {
+    display: flex;
+    margin: 10px;
+}
+
+.userBlock + .userBlock {
+    margin-top: 8px;
+}
+
+.userInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding: 10px 8px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.about {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.about {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.about p {
+    font-size: 14px;
+    margin: 0;
+    color: indianred;
+}

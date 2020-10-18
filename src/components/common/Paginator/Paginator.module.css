@@ -1,0 +1,15 @@
+.selectedPage {
+    font-weight: 700;
+    background-color: green;
+}
+
+.pageNumber {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid green;
+    margin-right: 8px;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+}
