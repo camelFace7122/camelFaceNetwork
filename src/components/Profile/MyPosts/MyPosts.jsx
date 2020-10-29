@@ -7,7 +7,7 @@ window.props = [];
 
 const MyPosts = (props) => {
     let postsElements = props.profilePage.posts.map(el => {
-        return <Post deletePost={props.deletePost} id={el.id} message={el.message} likesCount={el.likesCount}/>
+        return <Post key={el.id} deletePost={props.deletePost} id={el.id} message={el.message} likesCount={el.likesCount}/>
     })
 
     let addNewPost = (values) => {

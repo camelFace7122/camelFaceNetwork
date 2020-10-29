@@ -1,3 +1,74 @@
+/* Fonts */
+
+@font-face{
+  font-family: 'Geneva';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('./assets/fonts/geneva-plain-001-001.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Telegrafico';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('./assets/fonts/telegrafico.woff') format('woff');
+}
+
+/* dosis-300 - latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./assets/fonts/dosis-v18-latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./assets/fonts/dosis-v18-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/dosis-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/dosis-v18-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('./assets/fonts/dosis-v18-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/dosis-v18-latin-300.svg#Dosis') format('svg'); /* Legacy iOS */
+}
+/* dosis-regular - latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/dosis-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./assets/fonts/dosis-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/dosis-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/dosis-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./assets/fonts/dosis-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/dosis-v18-latin-regular.svg#Dosis') format('svg'); /* Legacy iOS */
+}
+/* dosis-600 - latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/dosis-v18-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('./assets/fonts/dosis-v18-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./assets/fonts/dosis-v18-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./assets/fonts/dosis-v18-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('./assets/fonts/dosis-v18-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./assets/fonts/dosis-v18-latin-600.svg#Dosis') format('svg'); /* Legacy iOS */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+/* Basic styles */
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html { 
+  overflow: overlay;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,5 +80,5 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace;  
 }

@@ -9,3 +9,7 @@ export const getStatus = (state) => {
 export const getProfilePage = (state) => {
     return state.profilePage;
 }
+
+export const getProfileUpdateStatus = (state) => {
+    return state.profilePage.profileUpdateStatus;
+}

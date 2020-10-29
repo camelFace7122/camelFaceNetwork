@@ -1,9 +1,10 @@
 import React from 'react';
-import { Field, reduxForm } from 'redux-form';
-import { Checkbox, createField, Input } from '../common/FormsControls/FormsControls';
+import { reduxForm } from 'redux-form';
+import { Checkbox, createField, FormError, Input } from '../common/FormsControls/FormsControls';
 import { required } from '../../utils/validators/validators';
 import { Redirect } from 'react-router-dom';
-import classes from './../common/FormsControls/FormsControls.module.css'
+import { Captcha } from '../common/Captcha/Captcha';
+
 
 const Login = (props) => {
     const onSubmit = (formData) => {
@@ -14,11 +15,11 @@ const Login = (props) => {
 
     return <div>
         <h1>Login</h1>
-        <LoginReduxForm onSubmit={ onSubmit } />
+        <LoginReduxForm onSubmit={ onSubmit } captchaUrl={props.captchaUrl} />
     </div>
 }
 
-const LoginForm = ({handleSubmit, error}) => {
+const LoginForm = ({handleSubmit, error, captchaUrl}) => {
     return <form onSubmit={handleSubmit}>
             <div>
                 {createField('Login', 'email', [required], Input)}
@@ -27,11 +28,10 @@ const LoginForm = ({handleSubmit, error}) => {
                 {createField('Password', 'password', [required], Input, 'password')}
             </div>
             <div>   
-                {createField(null, 'rememberMe', [], Checkbox, 'checkbox')}
-            </div>
-            {error && <div className={classes.formSummaryError}>
-                {error}
-            </div>}
+                {createField(null, 'rememberMe', [], (props) => <Checkbox {...props} text={'Remember me'} />, 'checkbox')}
+            </div> 
+            {captchaUrl && <Captcha captchaUrl={captchaUrl} />}
+            {error && <FormError error={error} />}
             <div>
                 <button>Login</button>
             </div>

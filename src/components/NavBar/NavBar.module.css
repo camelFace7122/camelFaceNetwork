@@ -1,7 +1,17 @@
+.navBar {
+    flex: 0 0 16%;
+    margin: 5px 5px 0 0;
+    
+}   
+
 .nav {
-    grid-area: nav;
-    background-color: purple;
+    background-color: #f4ebcd;
     padding: 15px 15px 50px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    -webkit-box-shadow: 0px 1px 7px -3px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 1px 7px -3px rgba(0,0,0,0.55);
+    box-shadow: 0px 1px 7px -3px rgba(0,0,0,0.55);
 }
 
 .item a {
@@ -36,7 +46,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 10px 5px;
-    background-color: indigo;
+    background-color: #f4ebcd;
 }
 
 aside h3 {
@@ -45,6 +55,11 @@ aside h3 {
 }
 
 aside {
-    background-color: lightgray;
+    background-color:#f9f9f9;
     overflow: auto;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    -webkit-box-shadow: 0px 1px 7px -3px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 1px 7px -3px rgba(0,0,0,0.55);
+    box-shadow: 0px 1px 7px -3px rgba(0,0,0,0.55);
 }

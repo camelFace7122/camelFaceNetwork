@@ -1,0 +1,43 @@
+.errorPopUp {
+    min-width: 250px;
+    min-height: 100px;
+    -webkit-box-shadow: -4px -2px 60px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px -2px 60px -1px rgba(0,0,0,0.75);
+    box-shadow: -4px -2px 60px -1px rgba(0,0,0,0.75);   
+    background-color: cadetblue; 
+    border-radius: 8px;
+    border: 2px solid indianred;
+    opacity: 0;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 15px;
+    text-align: center;
+    transform: translate(0px, 500px);
+    transition: opacity 1s ease-out,
+                transform 1s ease-out,
+                
+}
+
+.errorPopUp p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+}
+
+.errorPopUp.isHasError {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    border: none;
+    width: 20px;
+    border: 1px solid indianred;
+    cursor: pointer;
+}

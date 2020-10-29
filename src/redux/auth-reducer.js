@@ -1,12 +1,14 @@
-import { authAPI } from '../api/api';
+import { authAPI, securityAPI } from '../api/api';
 import { stopSubmit } from 'redux-form';
 const SET_AUTH_USER_DATA = 'auth/SET_AUTH_USER_DATA';
+const GET_CAPTCHA_URL = 'auth/GET_CAPTCHA_URL';
 
 let initialState = {
     userId: null,
     email: null,
     login: null,
     isAuth: false,
+    captchaUrl: null,
 };
 
 const authReducer = (state = initialState, action) => {
@@ -17,10 +19,21 @@ const authReducer = (state = initialState, action) => {
                 ...action.data,
                 isAuth: action.isAuth,
             }
+        case GET_CAPTCHA_URL:
+            debugger;
+            return {
+                ...state,
+                ...action.payload,
+            }
         default:
             return state;
     }
 }
+
+const getCaptchaUrl = (captchaUrl) => ({
+    type: GET_CAPTCHA_URL,
+    payload: { captchaUrl },
+})
 
 export const setAuthUserData = (userId, email, login, isAuth) => ({ type: SET_AUTH_USER_DATA, data: { userId, email, login }, isAuth, });
 
@@ -39,6 +52,13 @@ export const authorizeByLogin = (formData) => async (dispatch) => {
     if (data.resultCode === 0) {
         dispatch(getAuthUserDataThunkCreator());
     } else {
+        if (data.resultCode === 10) {
+            let captchaUrl = await securityAPI.getCaptchaUrl()
+            .then((data) => {
+                return data.url;                
+            });
+            dispatch(getCaptchaUrl(captchaUrl)); 
+        }
         let messages = (data.messages.length > 0) ? data.messages[0] : 'Common Error';
         dispatch(stopSubmit('login', { _error: messages }));
     }
