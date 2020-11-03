@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f719a5c79390a83a6d8bcd5129add87a",
+    "revision": "1fe1901d70a4a2e4733e44511fd15814",
     "url": "/camelFaceNetwork/index.html"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/camelFaceNetwork/static/css/7.8d5803fd.chunk.css"
   },
   {
-    "revision": "6d7960f8097d6264b98f",
+    "revision": "d325481339cc529c114a",
     "url": "/camelFaceNetwork/static/css/main.08c6fc69.chunk.css"
   },
   {
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/camelFaceNetwork/static/js/7.25d07074.chunk.js"
   },
   {
-    "revision": "6d7960f8097d6264b98f",
-    "url": "/camelFaceNetwork/static/js/main.a5560690.chunk.js"
+    "revision": "d325481339cc529c114a",
+    "url": "/camelFaceNetwork/static/js/main.788b6f3e.chunk.js"
   },
   {
     "revision": "318dcd130cc8b6835855",
