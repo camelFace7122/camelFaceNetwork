@@ -35,6 +35,12 @@ const LoginForm = ({handleSubmit, error, captchaUrl}) => {
             <div>
                 <button>Login</button>
             </div>
+
+            <div>
+                Тестовые логин и пароль: 
+                Email: free@samuraijs.com
+                Password: free
+            </div>
         </form>
 }
 
