@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/camelFaceNetwork/precache-manifest.59d094fbb330800afac5fdbeb2cd65e9.js"
+  "/camelFaceNetwork/precache-manifest.d27c40f6ed928e56f8eee853ba908f61.js"
 );
 
 self.addEventListener('message', (event) => {
